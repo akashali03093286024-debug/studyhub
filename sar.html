@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Structure–Activity Relationship (SAR) | StudyHub</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#0f172a;color:#e5e7eb;font-family:Arial,sans-serif}
+header{background:#111827;padding:22px 18px;border-bottom:1px solid #334155}
+h1{margin:0 0 6px;font-size:26px}.sub{color:#94a3b8}
+main{max-width:700px;margin:auto;padding:18px}.back{color:#93c5fd;text-decoration:none}
+.box{background:#1e293b;border:1px solid #334155;border-radius:14px;padding:18px;margin:16px 0}
+h2{margin-top:0}li{margin:9px 0;line-height:1.5}
+.q{background:#111827;border:1px solid #334155;border-radius:12px;padding:15px;margin:12px 0}
+button{width:100%;padding:12px;margin:5px 0;background:#1e293b;color:white;border:1px solid #475569;border-radius:9px;text-align:left}
+button:hover{background:#334155}#score{font-size:20px;font-weight:bold;margin-top:18px}
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>🧪 Structure–Activity Relationship (SAR)</h1><div class="sub">Easy Notes • Quick Revision • 15 MCQs</div></header>
+<main>
+<a class="back" href="medicinal-chemistry.html">← Back to Medicinal Chemistry</a>
+<div class="box"><h2>📚 Easy Notes</h2><p>SAR studies how changes in the chemical structure of a compound affect its biological activity.</p><ul><li>Structural changes can alter activity</li><li>Helps identify important groups</li><li>Supports lead optimization</li><li>Useful in drug design</li></ul></div>
+<div class="box"><h2>⚡ Quick Revision</h2><ul><li>SAR = structure vs activity</li><li>Small structural changes can affect activity</li><li>Helps optimize leads</li><li>Important in drug discovery</li></ul></div>
+<div class="box"><h2>📝 15 MCQs</h2><div id="quiz"></div><div id="score"></div></div>
+</main>
+<script>
+const qs=[
+["Medicinal chemistry mainly studies?","Design and development of medicines","Hospital construction","Plant classification","Blood circulation"],
+["A drug target is commonly?","A biological molecule affected by a drug","A tablet package","A hospital bed","A measuring cup"],
+["SAR stands for?","Structure-Activity Relationship","Safe Administration Rule","Solution Analysis Report","Standard Absorption Rate"],
+["Drug-receptor binding can affect?","Biological response","Tablet color only","Package size","Room temperature"],
+["A functional group can influence a drug's?","Chemical and biological properties","Tablet packaging only","Brand name only","Color only"],
+["Drug design aims to develop compounds with?","Desired biological activity","Only pleasant taste","Only bright color","Only large size"],
+["Lead compound means?","A promising compound for further optimization","A hospital patient","A dosage container","A laboratory chair"],
+["Optimization of a lead compound may improve?","Potency and selectivity","Package weight only","Tablet color only","Label size only"],
+["Acid-base properties can influence drug?","Ionization and solubility","Tablet shape only","Package design","Brand lettering"],
+["An ionized drug generally has different?","Solubility and membrane permeability","Tablet color","Container size","Label position"],
+["A receptor is generally?","A biological macromolecule that can bind a ligand","A glass container","A measuring device","A tablet coating"],
+["Selectivity means a drug preferentially acts on?","A particular target or targets","Every molecule equally","Only the package","Only water"],
+["Why are functional groups important in medicinal chemistry?","They affect interactions and chemical behavior","They determine the brand logo","They determine package color","They determine tablet count"],
+["One purpose of medicinal chemistry is to improve?","Efficacy and safety of drug candidates","Hospital architecture","Food production","Computer hardware"],
+["The relationship between chemical structure and biological effect is central to?","Medicinal chemistry","Hospital management","Accounting","Medical photography"]
+];
+let score=0;
+const box=document.getElementById("quiz");
+qs.forEach((q,i)=>{
+let d=document.createElement("div");d.className="q";
+d.innerHTML="<b>"+(i+1)+". "+q[0]+"</b>";
+q.slice(1).forEach((a,j)=>{
+let b=document.createElement("button");b.textContent=a;
+b.onclick=()=>{
+if(d.dataset.done)return;
+d.dataset.done=1;
+if(j===0){score++;b.style.border="2px solid #22c55e"}
+else b.style.border="2px solid #ef4444";
+document.getElementById("score").textContent="Score: "+score+" / 15";
+};
+d.appendChild(b);
+});
+box.appendChild(d);
+});
+</script>
+</body>
+</html>

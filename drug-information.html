@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drug Information | StudyHub</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0f172a;color:#e5e7eb;font-family:Arial,sans-serif}
+header{background:#111827;padding:22px 18px;border-bottom:1px solid #334155}
+h1{margin:0 0 7px;font-size:26px}
+.sub{color:#94a3b8;font-size:14px}
+main{max-width:700px;margin:auto;padding:18px}
+.back{display:inline-block;color:#93c5fd;text-decoration:none;margin-bottom:18px}
+.box{background:#1e293b;border:1px solid #334155;border-radius:14px;padding:18px;margin-bottom:14px}
+h2{font-size:19px;margin-top:0}
+li{margin:9px 0;line-height:1.5}
+.revision{border-left:4px solid #60a5fa}
+.question{background:#111827;border:1px solid #334155;border-radius:12px;padding:15px;margin:12px 0}
+button{width:100%;padding:12px;margin:6px 0;background:#1e293b;color:#fff;border:1px solid #475569;border-radius:9px;text-align:left}
+button:hover{background:#334155}
+#score{font-size:20px;font-weight:bold;margin-top:18px}
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>💊 Drug Information</h1>
+<div class="sub">Easy Notes • Quick Revision • 15 MCQs</div>
+</header>
+<main>
+<a class="back" href="clinical-pharmacy.html">← Back to Clinical Pharmacy</a>
+
+<div class="box">
+<h2>📚 Easy Notes</h2>
+<p>Drug information involves providing accurate, relevant and evidence-based information about medicines.</p>
+<ul><li>Uses and doses</li><li>Adverse effects</li><li>Contraindications</li><li>Interactions</li><li>Administration information</li></ul>
+</div>
+
+<div class="box revision">
+<h2>⚡ Quick Revision</h2>
+<ul><li>Information should be accurate</li><li>Use reliable evidence</li><li>Consider the patient and clinical context</li></ul>
+</div>
+
+<div class="box">
+<h2>📝 15 MCQs</h2>
+<div id="quiz"></div>
+<div id="score"></div>
+</div>
+</main>
+
+<script>
+const qs=[
+["What is the main goal of clinical pharmacy?","Optimize patient medication therapy","Manufacture tablets","Study plant classification","Measure blood pressure"],
+["Which activity is commonly performed by a clinical pharmacist?","Patient medication review","Building hospital rooms","Performing surgery","Taking X-rays"],
+["What should a pharmacist consider when reviewing medicines?","Dose, interactions and patient factors","Only tablet color","Only package size","Only brand name"],
+["Patient counseling mainly helps patients understand?","How to use medicines safely","How to manufacture glass","How to perform surgery","How to grow plants"],
+["Medication history includes information about?","Medicines currently and previously used","Only food preferences","Only height","Only blood group"],
+["Drug information should be?","Accurate and evidence-based","Based only on rumors","Based only on advertisements","Always handwritten"],
+["An adverse drug reaction is?","A harmful and unintended response to a medicine","A medicine's color","A tablet's shape","A normal food reaction"],
+["Drug interaction occurs when?","One drug affects another drug's effect","A tablet changes color","A patient drinks water","A capsule is opened"],
+["Clinical pharmacy is mainly concerned with?","Safe and effective use of medicines in patients","Manufacturing machines","Plant farming","Hospital construction"],
+["Which factor can affect drug therapy?","Age and kidney function","Shoe size","Hair length","Favorite color"],
+["Why is medication adherence important?","It helps patients take medicines as prescribed","It changes tablet color","It increases package size","It removes all side effects"],
+["What is therapeutic monitoring used for?","Monitoring drug therapy and response","Counting hospital beds","Designing labels","Measuring room temperature"],
+["A pharmacist may identify a potential drug interaction by checking?","The patient's complete medication list","Only the patient's name","Only the tablet color","Only the hospital room"],
+["Good patient counseling should use?","Clear and understandable language","Only technical jargon","No instructions","Unverified information"],
+["The overall purpose of clinical pharmacy is to improve?","Patient outcomes and medication safety","Building design","Food production","Computer hardware"]
+];
+
+let score=0,answered=0;
+const qbox=document.getElementById("quiz");
+
+qs.forEach((q,i)=>{
+let div=document.createElement("div");
+div.className="question";
+div.innerHTML="<b>"+(i+1)+". "+q[0]+"</b>";
+q.slice(1).forEach((a,j)=>{
+let b=document.createElement("button");
+b.textContent=a;
+b.onclick=()=>{
+if(div.dataset.done)return;
+div.dataset.done="1";answered++;
+if(j===0){score++;b.style.border="2px solid #22c55e";}
+else{b.style.border="2px solid #ef4444";}
+document.getElementById("score").textContent=
+"Score: "+score+" / 15";
+};
+div.appendChild(b);
+});
+qbox.appendChild(div);
+});
+</script>
+</body>
+</html>

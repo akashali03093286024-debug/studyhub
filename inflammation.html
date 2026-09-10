@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inflammation</title>
+<style>
+body{margin:0;background:#0f172a;color:#e2e8f0;font-family:Arial,sans-serif;padding:18px}
+.box{max-width:750px;margin:auto}
+h1{font-size:28px;margin-bottom:5px}
+.sub{color:#94a3b8;margin-bottom:20px}
+.card{background:#1e293b;padding:18px;border-radius:14px;margin:14px 0;border:1px solid #334155}
+h2{color:#38bdf8}
+li{margin:10px 0;line-height:1.5}
+.q{background:#172033;padding:15px;border-radius:12px;margin:12px 0}
+button{width:100%;padding:12px;margin:6px 0;background:#334155;color:white;border:0;border-radius:9px;text-align:left;font-size:15px}
+button:hover{background:#475569}
+.correct{background:#166534!important}
+.wrong{background:#991b1b!important}
+.score{font-size:22px;font-weight:bold;color:#38bdf8;margin-top:20px}
+a{color:#38bdf8}
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="box">
+<a href="pathology.html">← Back to Pathology</a>
+<h1>Inflammation</h1>
+<div class="sub">Pathology • Chapter 02</div>
+
+<div class="card">
+<h2>📖 Easy Notes</h2>
+<p><b>Inflammation</b> is a protective response of living tissue to injury or infection.</p>
+<ul>
+<li><b>Acute inflammation:</b> usually rapid and short-term.</li>
+<li><b>Chronic inflammation:</b> longer-lasting response.</li>
+<li>Common signs include redness, heat, swelling, pain and loss of function.</li>
+<li>Important cells include neutrophils in many acute responses and macrophages in chronic inflammation.</li>
+<li>Inflammation helps remove harmful stimuli and begins tissue repair.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>⚡ Quick Revision</h2>
+<ul><li>Inflammation = protective response</li><li>Acute = rapid/short duration</li><li>Chronic = prolonged</li><li>Redness + heat + swelling + pain are classic signs</li><li>Inflammation can support repair</li></ul>
+</div>
+
+<div class="card">
+<h2>📝 15 MCQs</h2>
+<div id="quiz"><div class="q" data-answer="a"><b>1. Inflammation is mainly a:</b><br><label><button><input type="radio" name="q1" value="a"> a) Protective response</button></label><label><button><input type="radio" name="q1" value="b"> b) Digestive process</button></label><label><button><input type="radio" name="q1" value="c"> c) Genetic code</button></label><label><button><input type="radio" name="q1" value="d"> d) Hormone</button></label></div>
+<div class="q" data-answer="b"><b>2. Acute inflammation is usually:</b><br><label><button><input type="radio" name="q2" value="a"> a) Very prolonged</button></label><label><button><input type="radio" name="q2" value="b"> b) Rapid and short-term</button></label><label><button><input type="radio" name="q2" value="c"> c) Always painless</button></label><label><button><input type="radio" name="q2" value="d"> d) A genetic disease</button></label></div>
+<div class="q" data-answer="c"><b>3. Which is a classic sign of inflammation?</b><br><label><button><input type="radio" name="q3" value="a"> a) Blindness</button></label><label><button><input type="radio" name="q3" value="b"> b) Hair growth</button></label><label><button><input type="radio" name="q3" value="c"> c) Swelling</button></label><label><button><input type="radio" name="q3" value="d"> d) Hearing improvement</button></label></div>
+<div class="q" data-answer="d"><b>4. Chronic inflammation is:</b><br><label><button><input type="radio" name="q4" value="a"> a) Always immediate</button></label><label><button><input type="radio" name="q4" value="b"> b) Always harmless</button></label><label><button><input type="radio" name="q4" value="c"> c) Only one minute</button></label><label><button><input type="radio" name="q4" value="d"> d) Long-lasting</button></label></div>
+<div class="q" data-answer="a"><b>5. Neutrophils are important in many:</b><br><label><button><input type="radio" name="q5" value="a"> a) Acute inflammatory responses</button></label><label><button><input type="radio" name="q5" value="b"> b) Bone formations only</button></label><label><button><input type="radio" name="q5" value="c"> c) Hormone formations only</button></label><label><button><input type="radio" name="q5" value="d"> d) Genetic mutations only</button></label></div>
+<div class="q" data-answer="c"><b>6. Macrophages are commonly associated with:</b><br><label><button><input type="radio" name="q6" value="a"> a) Digestion only</button></label><label><button><input type="radio" name="q6" value="b"> b) Bone growth only</button></label><label><button><input type="radio" name="q6" value="c"> c) Chronic inflammation</button></label><label><button><input type="radio" name="q6" value="d"> d) Vision</button></label></div>
+<div class="q" data-answer="b"><b>7. Redness is called:</b><br><label><button><input type="radio" name="q7" value="a"> a) Pain</button></label><label><button><input type="radio" name="q7" value="b"> b) Redness</button></label><label><button><input type="radio" name="q7" value="c"> c) Swelling</button></label><label><button><input type="radio" name="q7" value="d"> d) Fever only</button></label></div>
+<div class="q" data-answer="d"><b>8. Inflammation may help begin:</b><br><label><button><input type="radio" name="q8" value="a"> a) Hair loss</button></label><label><button><input type="radio" name="q8" value="b"> b) Genetic coding</button></label><label><button><input type="radio" name="q8" value="c"> c) Digestion</button></label><label><button><input type="radio" name="q8" value="d"> d) Tissue repair</button></label></div>
+<div class="q" data-answer="a"><b>9. Pain can be a sign of:</b><br><label><button><input type="radio" name="q9" value="a"> a) Inflammation</button></label><label><button><input type="radio" name="q9" value="b"> b) Normal vision</button></label><label><button><input type="radio" name="q9" value="c"> c) Normal hearing</button></label><label><button><input type="radio" name="q9" value="d"> d) Normal digestion</button></label></div>
+<div class="q" data-answer="c"><b>10. Heat can occur during:</b><br><label><button><input type="radio" name="q10" value="a"> a) Normal sleep</button></label><label><button><input type="radio" name="q10" value="b"> b) DNA replication</button></label><label><button><input type="radio" name="q10" value="c"> c) Inflammation</button></label><label><button><input type="radio" name="q10" value="d"> d) Protein folding only</button></label></div>
+<div class="q" data-answer="b"><b>11. Which is NOT a classic sign?</b><br><label><button><input type="radio" name="q11" value="a"> a) Swelling</button></label><label><button><input type="radio" name="q11" value="b"> b) Improved vision</button></label><label><button><input type="radio" name="q11" value="c"> c) Pain</button></label><label><button><input type="radio" name="q11" value="d"> d) Redness</button></label></div>
+<div class="q" data-answer="a"><b>12. Acute inflammation generally starts:</b><br><label><button><input type="radio" name="q12" value="a"> a) Rapidly</button></label><label><button><input type="radio" name="q12" value="b"> b) After many years only</button></label><label><button><input type="radio" name="q12" value="c"> c) Never</button></label><label><button><input type="radio" name="q12" value="d"> d) Only during sleep</button></label></div>
+<div class="q" data-answer="d"><b>13. A purpose of inflammation is to:</b><br><label><button><input type="radio" name="q13" value="a"> a) Stop all circulation</button></label><label><button><input type="radio" name="q13" value="b"> b) Stop immunity</button></label><label><button><input type="radio" name="q13" value="c"> c) Destroy every cell</button></label><label><button><input type="radio" name="q13" value="d"> d) Help remove harmful stimuli</button></label></div>
+<div class="q" data-answer="c"><b>14. Chronic means:</b><br><label><button><input type="radio" name="q14" value="a"> a) Sudden</button></label><label><button><input type="radio" name="q14" value="b"> b) One second</button></label><label><button><input type="radio" name="q14" value="c"> c) Prolonged</button></label><label><button><input type="radio" name="q14" value="d"> d) Normal</button></label></div>
+<div class="q" data-answer="b"><b>15. Swelling is also called:</b><br><label><button><input type="radio" name="q15" value="a"> a) Fever</button></label><label><button><input type="radio" name="q15" value="b"> b) Edema</button></label><label><button><input type="radio" name="q15" value="c"> c) Hypoxia</button></label><label><button><input type="radio" name="q15" value="d"> d) Apoptosis</button></label></div></div>
+<button onclick="checkQuiz()" style="text-align:center;background:#0284c7">Check Score</button>
+<div id="score" class="score"></div>
+</div>
+</div>
+
+<script>
+function checkQuiz(){
+let qs=document.querySelectorAll('.q');
+let score=0;
+qs.forEach(q=>{
+let selected=q.querySelector('input:checked');
+let ans=q.dataset.answer;
+q.querySelectorAll('button').forEach(b=>b.classList.remove('correct','wrong'));
+if(selected){
+let b=selected.parentElement;
+if(selected.value===ans){score++;b.classList.add('correct')}
+else{
+b.classList.add('wrong');
+let correct=q.querySelector('input[value="'+ans+'"]').parentElement;
+correct.classList.add('correct');
+}
+}
+});
+document.getElementById('score').innerHTML="🎯 Your Score: "+score+" / 15";
+}
+</script>
+</body>
+</html>

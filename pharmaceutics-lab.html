@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>💊 Pharmaceutics Lab</title>
+<style>
+body{margin:0;background:#0f172a;color:#e2e8f0;font-family:Arial;padding:18px;line-height:1.6}
+.container{max-width:800px;margin:auto}
+h1{color:#38bdf8;margin-bottom:5px}
+h2{color:#7dd3fc;margin-bottom:8px}
+.subtitle{color:#94a3b8}
+section{background:#111827;border:1px solid #334155;border-radius:14px;padding:16px;margin:15px 0}
+.box{color:#e2e8f0}
+.back{display:inline-block;background:#1e293b;color:white;padding:10px 15px;border-radius:9px;text-decoration:none;margin-bottom:15px}
+.q{background:#172033;border:1px solid #334155;padding:12px;border-radius:12px;margin:12px 0}
+button{display:block;width:100%;text-align:left;background:#1e293b;color:#e2e8f0;border:1px solid #475569;padding:10px;margin:7px 0;border-radius:8px}
+button:hover{background:#334155}
+.result{font-weight:bold}
+</style>
+<script>
+function check(btn,ok){
+ let r=btn.parentElement.querySelector('.result');
+ if(ok){r.textContent='✓ Correct';r.style.color='#4ade80';}
+ else{r.textContent='✗ Try again';r.style.color='#fb7185';}
+}
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<a class="back" href="practical-lab.html">← Practical Lab</a>
+<h1>💊 Pharmaceutics Lab</h1>
+<p class="subtitle">Practical experiments related to dosage forms and pharmaceutical preparations.</p>
+
+<section>
+<h2>Aim</h2>
+<div class="box">To understand basic practical techniques used in preparation and evaluation of pharmaceutical dosage forms.</div>
+</section>
+
+<section>
+<h2>Requirements</h2>
+<div class="box">Beakers, measuring cylinder, balance, spatula, glass rod, mortar and pestle, suitable ingredients, distilled water and laboratory PPE.</div>
+</section>
+
+<section>
+<h2>Principle</h2>
+<div class="box">Pharmaceutics practical work applies physical and chemical principles to prepare medicines in suitable dosage forms with appropriate quality.</div>
+</section>
+
+<section>
+<h2>Procedure</h2>
+<div class="box">1. Read the experiment and laboratory SOP.<br>2. Arrange apparatus and ingredients.<br>3. Measure materials accurately.<br>4. Follow the prescribed preparation method.<br>5. Observe physical characteristics and record results.</div>
+</section>
+
+<section>
+<h2>Observation</h2>
+<div class="box">Record appearance, colour, odour, clarity, volume, consistency or other parameters required by the specific experiment.</div>
+</section>
+
+<section>
+<h2>Result</h2>
+<div class="box">The preparation or evaluation is completed according to the prescribed laboratory procedure.</div>
+</section>
+
+<section>
+<h2>Precautions</h2>
+<div class="box">Wear PPE, label all preparations, use clean apparatus, measure accurately, avoid contamination, and follow the instructor's SOP.</div>
+</section>
+
+<section>
+<h2>🎓 Viva / Quick Check</h2>
+
+<div class="q">
+<p><b>1. What is pharmaceutics?</b></p>
+<button onclick="check(this,true)">A. Study of dosage-form design</button><button onclick="check(this,false)">B. Study of astronomy</button><button onclick="check(this,false)">C. Study of geography</button><button onclick="check(this,false)">D. Study of history</button><p class="result"></p></div>
+<div class="q">
+<p><b>2. Why is accurate measurement important?</b></p>
+<button onclick="check(this,true)">A. For reproducible preparation</button><button onclick="check(this,false)">B. Only for decoration</button><button onclick="check(this,false)">C. To change the label</button><button onclick="check(this,false)">D. To increase colour</button><p class="result"></p></div>
+<div class="q">
+<p><b>3. Which apparatus can measure liquid volume?</b></p>
+<button onclick="check(this,true)">A. Measuring cylinder</button><button onclick="check(this,false)">B. Mortar only</button><button onclick="check(this,false)">C. Spatula only</button><button onclick="check(this,false)">D. Balance pan only</button><p class="result"></p></div>
+<div class="q">
+<p><b>4. What should be followed during practical work?</b></p>
+<button onclick="check(this,true)">A. Laboratory SOP</button><button onclick="check(this,false)">B. Random procedure</button><button onclick="check(this,false)">C. Unknown online recipe</button><button onclick="check(this,false)">D. No instructions</button><p class="result"></p></div>
+</section>
+</div>
+</body>
+</html>

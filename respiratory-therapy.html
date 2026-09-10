@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Respiratory Diseases | StudyHub</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0f172a;color:#e5e7eb;font-family:Arial,sans-serif}
+header{background:#111827;padding:22px 18px;border-bottom:1px solid #334155}
+h1{margin:0 0 6px;font-size:26px}.sub{color:#94a3b8;font-size:14px}
+main{max-width:700px;margin:auto;padding:18px}
+.back{color:#93c5fd;text-decoration:none}
+.box{background:#1e293b;border:1px solid #334155;border-radius:14px;padding:18px;margin:16px 0}
+h2{margin-top:0}li{margin:9px 0;line-height:1.5}
+.q{background:#111827;border:1px solid #334155;border-radius:12px;padding:15px;margin:12px 0}
+button{width:100%;padding:12px;margin:5px 0;background:#1e293b;color:#fff;border:1px solid #475569;border-radius:9px;text-align:left}
+button:hover{background:#334155}
+#score{font-size:20px;font-weight:bold;margin-top:18px}
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>💊 Respiratory Diseases</h1>
+<div class="sub">Easy Notes • Quick Revision • 15 MCQs</div>
+</header>
+<main>
+<a class="back" href="pharmacotherapy.html">← Back to Pharmacotherapy</a>
+
+<div class="box"><h2>📚 Easy Notes</h2><p>Respiratory diseases affect the airways and lungs. Pharmacotherapy can help control symptoms, inflammation and airway problems depending on the condition.</p>
+<ul>
+<li>Asthma</li>
+<li>Chronic respiratory conditions</li>
+<li>Airway inflammation</li>
+<li>Monitoring respiratory symptoms</li>
+</ul></div>
+<div class="box"><h2>⚡ Quick Revision</h2><ul>
+<li>Respiratory system = airways + lungs</li>
+<li>Asthma involves airway inflammation and narrowing</li>
+<li>Treatment depends on the condition</li>
+<li>Monitor symptoms and response</li>
+</ul></div>
+
+<div class="box">
+<h2>📝 15 MCQs</h2>
+<div id="quiz"></div>
+<div id="score"></div>
+</div>
+</main>
+
+<script>
+const qs=[
+["Pharmacotherapy mainly focuses on?","Use of medicines to treat and manage diseases","Manufacturing hospital furniture","Plant classification","Laboratory building design"],
+["The main goal of pharmacotherapy is to improve?","Patient outcomes","Tablet color","Package size","Hospital decoration"],
+["A treatment plan should consider?","Patient condition and appropriate medicines","Only the medicine color","Only the package","Only the brand name"],
+["Cardiovascular diseases affect mainly the?","Heart and blood vessels","Lungs only","Skin only","Bones only"],
+["Hypertension means?","Persistently elevated blood pressure","Low blood glucose","Low body temperature","Reduced breathing rate"],
+["Respiratory diseases primarily involve the?","Respiratory system","Digestive system only","Skeletal system only","Urinary system only"],
+["Asthma is characterized by?","Airway inflammation and variable narrowing","Bone fracture","High blood glucose only","Kidney stones"],
+["Infectious diseases are caused by?","Pathogenic microorganisms","Only vitamins","Only minerals","Normal body temperature"],
+["Diabetes mellitus involves abnormal regulation of?","Blood glucose","Body height","Hair growth","Eye color"],
+["Insulin has an important role in regulating?","Blood glucose","Blood pressure only","Bone length","Hearing"],
+["CNS stands for?","Central Nervous System","Cardiac Nutrition System","Clinical Nursing Standard","Cellular Neuron Structure"],
+["Pharmacotherapy requires monitoring of?","Treatment response and safety","Tablet packaging only","Room temperature only","Medicine advertisements"],
+["An adverse drug reaction can affect?","Patient safety","Tablet color only","Package design only","Brand spelling only"],
+["Rational drug therapy means using medicines?","Appropriately for the patient's condition","Without considering the patient","Only according to color","Only according to price"],
+["A good pharmacotherapy plan should balance?","Effectiveness and safety","Color and packaging","Size and shape","Brand and logo"]
+];
+
+let score=0;
+const quiz=document.getElementById("quiz");
+
+qs.forEach((q,i)=>{
+let d=document.createElement("div");
+d.className="q";
+d.innerHTML="<b>"+(i+1)+". "+q[0]+"</b>";
+
+q.slice(1).forEach((a,j)=>{
+let b=document.createElement("button");
+b.textContent=a;
+b.onclick=()=>{
+if(d.dataset.done)return;
+d.dataset.done="1";
+
+if(j===0){
+score++;
+b.style.border="2px solid #22c55e";
+}else{
+b.style.border="2px solid #ef4444";
+}
+
+document.getElementById("score").textContent="Score: "+score+" / 15";
+};
+d.appendChild(b);
+});
+
+quiz.appendChild(d);
+});
+</script>
+</body>
+</html>

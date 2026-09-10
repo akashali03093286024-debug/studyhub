@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Study Timer</title>
+<style>
+body{font-family:Arial;background:#07111f;color:white;text-align:center;padding:30px}
+.box{background:#122238;padding:30px;border-radius:20px;margin-top:30px}
+button{padding:14px 25px;margin:8px;border:0;border-radius:12px;background:#2563eb;color:white;font-size:16px}
+a{color:#93c5fd}
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="index.html">← Home</a>
+
+<div class="box">
+<h1>⏱️ Study Timer</h1>
+<h1 id="t">25:00</h1>
+
+<button onclick="start()">Start</button>
+<button onclick="reset()">Reset</button>
+</div>
+
+<script>
+let x=1500,id;
+
+function draw(){
+document.getElementById("t").innerText=
+Math.floor(x/60)+":"+String(x%60).padStart(2,"0");
+}
+
+function start(){
+if(id)return;
+id=setInterval(()=>{
+if(x>0){
+x--;
+draw();
+}else{
+clearInterval(id);
+id=null;
+alert("Study Session Complete 🎉");
+}
+},1000);
+}
+
+function reset(){
+clearInterval(id);
+id=null;
+x=1500;
+draw();
+}
+
+draw();
+</script>
+
+</body>
+</html>

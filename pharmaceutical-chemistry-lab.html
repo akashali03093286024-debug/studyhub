@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>⚗️ Pharmaceutical Chemistry Lab</title>
+<style>
+body{margin:0;background:#0f172a;color:#e2e8f0;font-family:Arial;padding:18px;line-height:1.6}
+.container{max-width:800px;margin:auto}
+h1{color:#38bdf8;margin-bottom:5px}
+h2{color:#7dd3fc;margin-bottom:8px}
+.subtitle{color:#94a3b8}
+section{background:#111827;border:1px solid #334155;border-radius:14px;padding:16px;margin:15px 0}
+.box{color:#e2e8f0}
+.back{display:inline-block;background:#1e293b;color:white;padding:10px 15px;border-radius:9px;text-decoration:none;margin-bottom:15px}
+.q{background:#172033;border:1px solid #334155;padding:12px;border-radius:12px;margin:12px 0}
+button{display:block;width:100%;text-align:left;background:#1e293b;color:#e2e8f0;border:1px solid #475569;padding:10px;margin:7px 0;border-radius:8px}
+button:hover{background:#334155}
+.result{font-weight:bold}
+</style>
+<script>
+function check(btn,ok){
+ let r=btn.parentElement.querySelector('.result');
+ if(ok){r.textContent='✓ Correct';r.style.color='#4ade80';}
+ else{r.textContent='✗ Try again';r.style.color='#fb7185';}
+}
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<a class="back" href="practical-lab.html">← Practical Lab</a>
+<h1>⚗️ Pharmaceutical Chemistry Lab</h1>
+<p class="subtitle">Basic practical work involving pharmaceutical substances and chemical tests.</p>
+
+<section>
+<h2>Aim</h2>
+<div class="box">To understand basic laboratory techniques used for identification and examination of pharmaceutical substances.</div>
+</section>
+
+<section>
+<h2>Requirements</h2>
+<div class="box">Test tubes, test-tube holder, beakers, measuring cylinder, droppers, glass rod, appropriate reagents and PPE.</div>
+</section>
+
+<section>
+<h2>Principle</h2>
+<div class="box">Pharmaceutical chemistry uses chemical and physical principles to identify, characterize and evaluate substances used in medicines.</div>
+</section>
+
+<section>
+<h2>Procedure</h2>
+<div class="box">1. Read the experiment carefully.<br>2. Arrange clean apparatus.<br>3. Take the required sample as instructed.<br>4. Add reagents according to the laboratory manual.<br>5. Observe the specified change and record it.</div>
+</section>
+
+<section>
+<h2>Observation</h2>
+<div class="box">Record colour change, precipitate, odour, solubility or other observations only when required by the approved practical procedure.</div>
+</section>
+
+<section>
+<h2>Result</h2>
+<div class="box">The sample is examined according to the prescribed test and the observation is recorded.</div>
+</section>
+
+<section>
+<h2>Precautions</h2>
+<div class="box">Use PPE, handle reagents carefully, never taste chemicals, avoid direct inhalation, label samples, and follow instructor supervision.</div>
+</section>
+
+<section>
+<h2>🎓 Viva / Quick Check</h2>
+
+<div class="q">
+<p><b>1. What is a major purpose of pharmaceutical chemistry?</b></p>
+<button onclick="check(this,true)">A. Study and identification of drug substances</button><button onclick="check(this,false)">B. Study of planets</button><button onclick="check(this,false)">C. Study of weather</button><button onclick="check(this,false)">D. Study of languages</button><p class="result"></p></div>
+<div class="q">
+<p><b>2. What should be used when handling laboratory chemicals?</b></p>
+<button onclick="check(this,true)">A. Appropriate PPE</button><button onclick="check(this,false)">B. Bare hands only</button><button onclick="check(this,false)">C. Food utensils</button><button onclick="check(this,false)">D. No protection</button><p class="result"></p></div>
+<div class="q">
+<p><b>3. What should be recorded during a chemical test?</b></p>
+<button onclick="check(this,true)">A. Relevant observations</button><button onclick="check(this,false)">B. Unrelated stories</button><button onclick="check(this,false)">C. Personal guesses</button><button onclick="check(this,false)">D. Nothing</button><p class="result"></p></div>
+<div class="q">
+<p><b>4. Where should chemical procedures come from?</b></p>
+<button onclick="check(this,true)">A. Approved laboratory manual/SOP</button><button onclick="check(this,false)">B. Random instructions</button><button onclick="check(this,false)">C. Guesswork</button><button onclick="check(this,false)">D. Social media comments</button><p class="result"></p></div>
+</section>
+</div>
+</body>
+</html>

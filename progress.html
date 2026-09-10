@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Progress</title>
+<style>
+body{font-family:Arial;background:#07111f;color:white;padding:25px}
+.box{background:#122238;padding:25px;border-radius:20px;margin-top:25px}
+input{width:100%;margin:25px 0}
+a{color:#93c5fd}
+#v{font-size:45px;text-align:center}
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="index.html">← Home</a>
+
+<div class="box">
+<h1>📊 My Progress</h1>
+<h1 id="v">0%</h1>
+
+<input id="p" type="range" min="0" max="100" value="0">
+
+<p>Apni study progress set karo.</p>
+</div>
+
+<script>
+let p=localStorage.getItem("progress")||0;
+document.getElementById("p").value=p;
+document.getElementById("v").innerText=p+"%";
+
+document.getElementById("p").oninput=function(){
+p=this.value;
+localStorage.setItem("progress",p);
+document.getElementById("v").innerText=p+"%";
+};
+</script>
+
+</body>
+</html>
+wc -c progress.html

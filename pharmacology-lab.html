@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>💉 Pharmacology Lab</title>
+<style>
+body{margin:0;background:#0f172a;color:#e2e8f0;font-family:Arial;padding:18px;line-height:1.6}
+.container{max-width:800px;margin:auto}
+h1{color:#38bdf8;margin-bottom:5px}
+h2{color:#7dd3fc;margin-bottom:8px}
+.subtitle{color:#94a3b8}
+section{background:#111827;border:1px solid #334155;border-radius:14px;padding:16px;margin:15px 0}
+.box{color:#e2e8f0}
+.back{display:inline-block;background:#1e293b;color:white;padding:10px 15px;border-radius:9px;text-decoration:none;margin-bottom:15px}
+.q{background:#172033;border:1px solid #334155;padding:12px;border-radius:12px;margin:12px 0}
+button{display:block;width:100%;text-align:left;background:#1e293b;color:#e2e8f0;border:1px solid #475569;padding:10px;margin:7px 0;border-radius:8px}
+button:hover{background:#334155}
+.result{font-weight:bold}
+</style>
+<script>
+function check(btn,ok){
+ let r=btn.parentElement.querySelector('.result');
+ if(ok){r.textContent='✓ Correct';r.style.color='#4ade80';}
+ else{r.textContent='✗ Try again';r.style.color='#fb7185';}
+}
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<a class="back" href="practical-lab.html">← Practical Lab</a>
+<h1>💉 Pharmacology Lab</h1>
+<p class="subtitle">Practical learning about drug actions, dose-response concepts and safe experimental principles.</p>
+
+<section>
+<h2>Aim</h2>
+<div class="box">To understand basic pharmacological practical concepts such as drug action, dose-response relationships and observation of effects.</div>
+</section>
+
+<section>
+<h2>Requirements</h2>
+<div class="box">Laboratory record, approved practical manual, appropriate instruments or models, calculator when required, and PPE.</div>
+</section>
+
+<section>
+<h2>Principle</h2>
+<div class="box">Pharmacology studies how drugs interact with biological systems and how drug effects relate to factors such as dose and concentration.</div>
+</section>
+
+<section>
+<h2>Procedure</h2>
+<div class="box">1. Read the approved practical protocol.<br>2. Understand the drug, model and expected observations.<br>3. Follow the prescribed experimental steps under supervision.<br>4. Record observations accurately.<br>5. Interpret the result according to the practical manual.</div>
+</section>
+
+<section>
+<h2>Observation</h2>
+<div class="box">Record measurable or observable effects, timing, dose-related information and other parameters specified by the practical protocol.</div>
+</section>
+
+<section>
+<h2>Result</h2>
+<div class="box">The pharmacological observation is recorded and interpreted according to the approved practical procedure.</div>
+</section>
+
+<section>
+<h2>Precautions</h2>
+<div class="box">Perform experiments only under authorized supervision, follow institutional SOPs, handle medicines safely, and never perform human or animal experiments independently.</div>
+</section>
+
+<section>
+<h2>🎓 Viva / Quick Check</h2>
+
+<div class="q">
+<p><b>1. What does pharmacology study?</b></p>
+<button onclick="check(this,true)">A. Drugs and their effects on biological systems</button><button onclick="check(this,false)">B. Only plants</button><button onclick="check(this,false)">C. Only rocks</button><button onclick="check(this,false)">D. Only machines</button><p class="result"></p></div>
+<div class="q">
+<p><b>2. What can a dose-response relationship describe?</b></p>
+<button onclick="check(this,true)">A. Relationship between dose and effect</button><button onclick="check(this,false)">B. Colour of a tablet package</button><button onclick="check(this,false)">C. Room temperature only</button><button onclick="check(this,false)">D. Tablet brand logo</button><p class="result"></p></div>
+<div class="q">
+<p><b>3. How should pharmacology practicals be performed?</b></p>
+<button onclick="check(this,true)">A. Under approved supervision</button><button onclick="check(this,false)">B. Independently on people</button><button onclick="check(this,false)">C. Without instructions</button><button onclick="check(this,false)">D. Without safety precautions</button><p class="result"></p></div>
+<div class="q">
+<p><b>4. What should be recorded?</b></p>
+<button onclick="check(this,true)">A. Relevant experimental observations</button><button onclick="check(this,false)">B. Unrelated information</button><button onclick="check(this,false)">C. Guesses only</button><button onclick="check(this,false)">D. Nothing</button><p class="result"></p></div>
+</section>
+</div>
+</body>
+</html>

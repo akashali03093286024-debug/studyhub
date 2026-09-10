@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyHub | Subjects</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            padding: 20px;
+            background: #111827;
+            border-bottom: 1px solid #334155;
+        }
+
+        header h1 {
+            font-size: 26px;
+        }
+
+        header p {
+            color: #94a3b8;
+            margin-top: 6px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 25px;
+            color: #94a3b8;
+            text-decoration: none;
+        }
+
+        .back:hover {
+            color: white;
+        }
+
+        .title {
+            margin-bottom: 20px;
+        }
+
+        .title h2 {
+            font-size: 25px;
+        }
+
+        .title p {
+            color: #94a3b8;
+            margin-top: 7px;
+        }
+
+        .subjects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .subject {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 16px;
+            padding: 22px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .subject:hover {
+            transform: translateY(-4px);
+        }
+
+        .icon {
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        .subject h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .subject p {
+            color: #94a3b8;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 35px 10px;
+            color: #64748b;
+        }
+    </style>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>📚 StudyHub</h1>
+    <p>Complete Learning Platform</p>
+</header>
+
+<div class="container">
+
+    <a href="index.html" class="back">← Back to Dashboard</a>
+
+    <div class="title">
+        <h2>📖 All Subjects</h2>
+        <p>Choose your field and start learning.</p>
+    </div>
+
+    <div class="subjects">
+
+        <div class="subject">
+            <div class="icon">💊</div>
+            <h3>Pharm D</h3>
+            <p>Pharmacology, Physical Pharmacy, Pharmaceutics and more.</p>
+        </div>
+
+        <div class="subject">
+            <div class="icon">🩺</div>
+            <h3>MBBS</h3>
+            <p>Anatomy, Physiology, Biochemistry and basic medical sciences.</p>
+        </div>
+
+        <div class="subject">
+            <div class="icon">🧬</div>
+            <h3>Biology</h3>
+            <p>Cells, genetics, human biology, ecology and more.</p>
+        </div>
+
+        <div class="subject">
+            <div class="icon">⚗️</div>
+            <h3>Chemistry</h3>
+            <p>Organic, inorganic and physical chemistry.</p>
+        </div>
+
+        <div class="subject">
+            <div class="icon">⚛️</div>
+            <h3>Physics</h3>
+            <p>Mechanics, electricity, waves, optics and modern physics.</p>
+        </div>
+
+        <div class="subject">
+            <div class="icon">📘</div>
+            <h3>English</h3>
+            <p>Grammar, vocabulary, comprehension and writing skills.</p>
+        </div>
+
+        <div class="subject">
+            <div class="icon">💻</div>
+            <h3>Computer Science</h3>
+            <p>Programming, algorithms, databases and computer fundamentals.</p>
+        </div>
+
+        <div class="subject">
+            <div class="icon">📐</div>
+            <h3>Mathematics</h3>
+            <p>Algebra, geometry, calculus and problem solving.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    StudyHub © 2026 | Learn • Practice • Improve
+</footer>
+
+</body>
+</html>
